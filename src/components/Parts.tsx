@@ -7,7 +7,7 @@ interface Part {
   colorHex: string;
 }
 
-export default function PartsSidebar() {
+export default function Parts() {
   const [parts, setParts] = useState<Part[]>([
     {
       id: '1',
@@ -24,7 +24,7 @@ export default function PartsSidebar() {
   ]);
 
   return (
-    <aside>
+    <>
       <h2>Parts</h2>
       
       <table>
@@ -52,6 +52,6 @@ export default function PartsSidebar() {
       </table>
 
       <button>Add part</button>
-    </aside>
+    </>
   );
 }
