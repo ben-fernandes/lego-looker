@@ -1,5 +1,5 @@
 import Parts from './components/parts/Parts.tsx'
-import Sets from './components/Sets.tsx'
+import Sets from './components/sets/Sets.tsx'
 
 function App() {
     return (
