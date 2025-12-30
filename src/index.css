@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+#root {
+    height: 100vh;
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h1, h2 {
+        @apply font-bold;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+
+.rainbow-image {
+    animation: rainbow-cycle 2s linear infinite;
+}
+
+@keyframes rainbow-cycle {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
