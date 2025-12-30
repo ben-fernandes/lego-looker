@@ -1,5 +1,6 @@
 import {Add} from "grommet-icons";
 import PartList from "./PartList.tsx";
+import RoundButton from "../buttons/RoundButton.tsx";
 
 
 export default function Parts() {
@@ -9,7 +10,10 @@ export default function Parts() {
 
             <PartList/>
 
-            <button className='text-green-500'>Add part <Add/></button>
+            <div>
+                <RoundButton onClick={() => {
+                }} text='Add part' I={Add}/>
+            </div>
         </div>
     );
 }

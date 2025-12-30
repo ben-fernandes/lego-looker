@@ -2,15 +2,17 @@ import {type Icon} from "grommet-icons";
 
 interface RoundButtonProps {
     onClick: () => void;
-    I: Icon
+    text?: string;
+    I?: Icon
 }
 
-export default function RoundButton({onClick, I}: RoundButtonProps) {
+export default function RoundButton({onClick, text, I}: RoundButtonProps) {
     return (
         <button
             onClick={onClick}
-            className='inline-flex bg-gray-200 hover:bg-gray-400 rounded-full p-1'>
-            <I size='small'/>
+            className='inline-flex justify-between items-center bg-gray-200 hover:bg-gray-400 rounded-full gap-2 p-1'>
+            {text}
+            {I && <I size='small'/>}
         </button>
     )
 }
