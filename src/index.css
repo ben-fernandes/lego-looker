@@ -16,6 +16,13 @@
     button {
         cursor: pointer;
     }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            @apply bg-gray-950;
+            @apply text-white
+        }
+    }
 }
 
 
@@ -31,5 +38,6 @@
         filter: hue-rotate(360deg);
     }
 }
+
 
 

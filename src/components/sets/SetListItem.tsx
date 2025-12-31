@@ -12,7 +12,7 @@ interface SetListItemProps {
 
 export default function SetListItem({set}: SetListItemProps) {
     return (
-        <div className="flex flex-col bg-white shadow p-2">
+        <div className="flex flex-col bg-white dark:bg-gray-800 shadow p-2 gap-2">
                 <img
                     src={set.imageUrl}
                     alt={`Image of ${set.name}`}
