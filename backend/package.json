@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
+    "generate-prisma-client": "prisma generate",
     "build": "tsc",
     "start": "node dist/src/index.js"
   },
