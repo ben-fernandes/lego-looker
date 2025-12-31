@@ -21,12 +21,12 @@ export default function PartListItem({part}: PartListItemProps) {
     const [isHidden, setIsHidden] = useState(false)
     
     return (
-        <div className="flex flex-col bg-white dark:bg-gray-800 shadow p-2">
+        <div className="flex flex-col bg-white dark:bg-gray-800 shadow p-2 rounded-2xl">
             <div className='grid gap-2 grid-cols-[2fr_5fr_auto]'>
                 <img
                     src={part.imageUrl}
                     alt={`Image of ${part.name}`}
-                    className={`aspect-square w-full ${part.color ? '' : 'rainbow-image'}`}/>
+                    className={`aspect-square w-full rounded-lg ${part.color ? '' : 'rainbow-image'}`}/>
                 <div className='flex flex-col'>
                     <span><strong>{part.name}</strong> <EditButton onClick={() => {
                     }}/></span>

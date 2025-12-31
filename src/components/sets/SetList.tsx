@@ -10,7 +10,7 @@ export default function SetList() {
         },
         {
             id: '21011-1',
-            name: 'Brandenburg Gate',
+            name: 'Brandenburg Gate With More Words',
             imageUrl: 'https://cdn.rebrickable.com/media/thumbs/sets/21011-1/15846.jpg/1000x800p.jpg?1750517280.7329981'
         },
         {
