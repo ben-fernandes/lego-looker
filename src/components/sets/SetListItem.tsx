@@ -1,4 +1,4 @@
-import HideButton from "../buttons/HideButton.tsx";
+import CloseButton from "../buttons/CloseButton.tsx";
 
 export interface Set {
     id: string;
@@ -19,8 +19,8 @@ export default function SetListItem({set}: SetListItemProps) {
                 className="aspect-square rounded-lg"/>
             <div className='flex between justify-between items-end'>
                 <span><strong>{set.name}</strong></span>
-                <HideButton onClick={() => {
-                }} isHidden={false}/>
+                <CloseButton onClick={() => {
+                }} />
             </div>
         </div>
     )
