@@ -2,7 +2,7 @@
   "$schema": "https://schema.railpack.com",
   "steps": {
     "install": {
-      "commands": ["npm install"]
+      "commands": ["npm ci"]
     },
     "generate-prisma-client": {
       "inputs": [{ "step": "install" }],
