@@ -3,7 +3,7 @@ import Sets from './components/sets/Sets.tsx'
 
 function App() {
     return (
-        <div className="flex h-full">
+        <div className="flex min-h-screen">
             <aside className="flex-1 shadow p-2">
                 <Parts/>
             </aside>
